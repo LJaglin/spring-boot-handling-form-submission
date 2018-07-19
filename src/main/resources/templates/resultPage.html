@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Famous person form</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <h1>The famous person:</h1>
+        <p th:text="'First name: ' + ${famousPerson.firstName}" />
+        <p th:text="'Last name: ' + ${famousPerson.lastName}" />
+        <p th:text="'Age: ' + ${famousPerson.age}" />
+        <a href="/form">Fill in again</a>
+    </body>
+</html>
